@@ -1,0 +1,17 @@
+{%load static%}
+<html>
+    <head>
+        <title>Reading list</title>
+        <link href="{%static 'css/base.css'%}" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+        <header>
+            <h1><a href="{%url 'home'%}">Reading list</a></h1>
+        </header>
+        <div>
+            {%block content%}
+            {%endblock content%}
+        </div>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+{%extends 'base.html'%}
+{%block content%}
+<div class="book-entry">
+<h2>Title: {{book.title}}</h2>
+<p>Author: {{book.author}}</p>
+<span id="datetime">Deadline: {{book.deadline}}</p>
+{%if book.read == False%}
+    <p>Book is not read yet</p>
+    {%else%}
+    <p>Book has already been read</p>
+    {%endif%}
+</div>
+<button><a href="{%url 'book_edit' book.pk%}">Edit book entry</a></button>
+<button><a href="{%url 'book_delete' book.pk%}">Delete book entry</a></button>
+{%endblock content%}

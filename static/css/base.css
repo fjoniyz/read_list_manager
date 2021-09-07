@@ -1,0 +1,18 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+	text-align : center;
+    }
+header {
+    border-bottom: 1px solid #999;
+    margin-bottom: 2rem;
+    display: flex;
+    }
+header h1 a {
+    text-decoration: none;
+}
+.tables {
+    column-count: 2;
+    column-rule-style: solid;
+    column-rule-color: lightblue;
+}
